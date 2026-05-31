@@ -70,8 +70,6 @@ body::after {
 }
 
 .title{
-    /* text-shadow: 3px 3px 0px var(--primary-color); */
-    /* text-shadow: 4px 4px 0px #3a0000, -2px -2px 0px #3a0000, 0 0 30px rgba(139, 0, 0, 0.5); */
     text-shadow: 
         0 0 10px rgba(139, 0, 0, 0.8),
         0 0 30px rgba(139, 0, 0, 0.5),
