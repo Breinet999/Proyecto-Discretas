@@ -1,5 +1,5 @@
-// audio control
-const audio = new Audio("./sounds/ambient.mp3");
+// control de audio
+const audio = new Audio("../sounds/ambient.mp3");
 audio.loop = true;
 audio.volume = 0.2;
 
@@ -16,6 +16,7 @@ btn.addEventListener('click', () => {
     }
 });
 
+// agregados 
 // efecto de linterna 
 const flashlight = document.querySelector('.flashlight');
 

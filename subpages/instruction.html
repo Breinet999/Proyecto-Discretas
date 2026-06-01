@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones</title>
+    <link rel="stylesheet" href="../style/style-ins.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+</head>
+
+<body>
+    <!-- overlay efecto linterna -->
+    <div class="flashlight"></div>
+
+    <!-- control de sonido -->
+    <button class="btn-sound" id="btn-sound">
+        <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+
+    <!-- encabezado de la pagina -->
+    <header class="header">
+        <h1 class="title">Instrucciones</h1>
+        <p class="subtitle">¿Cómo sobrevivir?</p>
+    </header>
+
+    <!-- contenido principal -->
+    <main class="main">
+
+        <!-- seccion de objetivo -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fa-solid fa-skull"></i>
+                Objetivo
+            </h2>
+            <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sobrevive el mayor tiempo posible mientras evitas los peligros
+                del pasillo. Encuentra la salida antes de que sea demasiado tarde.
+            </p>
+        </section>
+
+        <!-- seccion de controles -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fa-solid fa-gamepad"></i>
+                Controles
+            </h2>
+            <ul class="control-list">
+                <li class="control-item">
+                    <span class="tecla">W</span>
+                    <span class="control-desc">Mover arriba</span>
+                </li>
+                <li class="control-item">
+                    <span class="tecla">A</span>
+                    <span class="control-desc">Mover izquierda</span>
+                </li>
+                <li class="control-item">
+                    <span class="tecla">S</span>
+                    <span class="control-desc">Mover abajo</span>
+                </li>
+                <li class="control-item">
+                    <span class="tecla">D</span>
+                    <span class="control-desc">Mover derecha</span>
+                </li>
+                <li class="control-item">
+                    <span class="tecla">ESC</span>
+                    <span class="control-desc">Pausar juego</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- seccion de consejos -->
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Consejos
+            </h2>
+            <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mantente en las sombras, no hagas ruido y busca siempre
+                la ruta más corta hacia la salida.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- pie de pagina con navegacion de vuelta -->
+    <footer class="footer">
+        <a class="btn-back" href="../index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            Volver al menú
+        </a>
+    </footer>
+
+    <div class="glitch-overlay"></div>
+    <script src="../script/audio.js"></script>
+</body>
+
+</html>
