@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #8b0000;
+    --secondary-color: #d4c8a8;
+    --border-color: #cc0000;
+    --text-color: white;
+    --text-color-secundary: #d4c8a8;
+    --background-color: var(--primary-color);
+    --background-color-btn: red;
+    
+}
+
+
+
+body{
+    background-image: url("../images/b2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Press Start 2P', monospace;
+    color: var(--text-color);
+}
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 90vh;
+}
+#game {
+    border: 2px solid var(--primary-color);
+    box-shadow:
+        0 0 20px rgba(139, 0, 0, 0.45),
+        inset 0 0 40px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.45);
+    image-rendering: pixelated;
+}
+
+
+
+
+/* --- CAPAS DE EFECTOS --- */
+
+.flashlight {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50; 
+   background: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.1s ease;
+}
+
+.glitch-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 60;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(204, 0, 0, 0.12) 0px,
+        rgba(204, 0, 0, 0.12) 2px,
+        transparent 2px,
+        transparent 8px
+    );
+    mix-blend-mode: screen;
+    animation: glitch 6s steps(1) infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { opacity: 0; transform: translateX(0); }
+    70%      { opacity: 0; }
+    72%      { opacity: 0.8; transform: translateX(-4px); }
+    73%      { opacity: 0; }
+    84%      { opacity: 0.6; transform: translateX(3px); }
+    85%      { opacity: 0; }
+    92%      { opacity: 0.9; transform: translateX(-2px); }
+    93%      { opacity: 0; }
+}
+/* --- BOTÓN DE SONIDO --- */
+
+.btn-sound {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.7s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-sound:hover {
+    background: var(--background-color-btn);
+    border-color: var(--border-color);
+    transform: scale(1.1);
+    color: var(--text-color);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.6),
+                0 0 40px rgba(139, 0, 0, 0.2);
+}
+
+/* boton de volver a atras */
+/* --- BOTÓN DE VOLVER --- */
+
+.btn-back {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 99;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 1rem 1.2rem;
+    border: 2px solid var(--primary-color);
+    box-shadow: 5px 5px 0px var(--primary-color);
+
+    color: var(--text-color-secundary);
+    background: transparent;
+    text-decoration: none;
+    font-size: 0.7rem;
+
+    transition: opacity 0.7s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: var(--background-color-btn);
+    border-color: var(--border-color);
+    color: var(--text-color);
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px rgba(139, 0, 0, 0.6),
+        0 0 40px rgba(139, 0, 0, 0.2);
+}
